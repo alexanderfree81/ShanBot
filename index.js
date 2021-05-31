@@ -194,11 +194,11 @@ async function starts() {
 			console.log(anu)
 			if (anu.action == 'add') {
 				num = anu.participants[0]
-				teks = `Mi loco @${num.split('@')[0]}\nTodo bien NEFASTO!!!! Bienvenido a *${mdata.subject}* el mejor grupo una locura 👉😎👈\n\nUn gusto conocerte hijo de la maraca 😀\n\nOjito sigue las reglas del grupo si no, pa fuera mi loco los admins te eliminan 🧐\n\nPara utilizar el bot registrate con el comando ${prefix}daftar y tu nombre\n\nPara ver los demas comandos utiliza ${prefix}help\n\nOjito con el spam 🧐\n\nby shanduy`
+				teks = `Mi loco @${num.split('@')[0]}\nTodo bien Bienvenido a *${mdata.subject}* el mejor grupo una locura 🤠\n\nUn gusto conocerte 😊\n\nOjito sigue las reglas del grupo si no, pa fuera mi loco los admins te eliminan 🧐\n\nPara utilizar el bot registrate con el comando ${prefix}daftar y tu nombre\n\nPara ver los demas comandos utiliza ${prefix}help\n\nOjito con el spam 🧐\n\nby shanduy`
                           client.sendMessage(mdata.id, teks, MessageType.text, { contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
 				num = anu.participants[0]
-				teks = `NOOOO se nos fue un NEFASTO 😎 @${num.split('@')[0]}👋\n\nQue dios lo bendiga 😎`
+				teks = `NOOOO se nos fue un pana ☹ @${num.split('@')[0]}👋\n\nQue dios lo bendiga
 				client.sendMessage(mdata.id, teks, MessageType.text, {contextInfo: {"mentionedJid": [num]}})
 			}
 		} catch (e) {
@@ -235,7 +235,7 @@ async function starts() {
 			const isCmd = body.startsWith(prefix)
 
 			mess = {
-				wait: 'Calmao gordo puto estoy procesando 😎👏\n\nNo spames negro del orto 🤬🤑\n\nSi usastes la funcion *play asegurate de colocar bien el nombre de la cancion o el link del video 🧐\n\nFlaco los stickergif son de 6 segundos 🤢\n\nby shanduy',
+				wait: 'Calmao estoy procesando 😎👏\n\nNo spames porfavor \n\nSi usastes la funcion *play asegurate de colocar bien el nombre de la cancion o el link del video 🧐\n\nlos stickergif son de 6 segundos \n\nby shanduy',
 				success: '✔️ Listo ✔️',
                                 levelon: '❬ ✔ ❭ *Level activado*',
 				leveloff: ' ❬ X ❭  *Level desactivado*',
@@ -251,7 +251,7 @@ async function starts() {
 					ownerB: '[❗] Este comando solo lo usa ShanBot! ❌',
 					admin: '[❗] Este comando solo puede ser utilizado por administradores del grupo! ❌',
 					Badmin: '[❗] Este comando solo se puede usar cuando el bot se convierte en administrador! ❌',
-                                        daftarB: `「NEFASTOOOOO」\n\nPERO PA!\n\nNo estas registrado en mi base de datos 😳 \n\nComando : ${prefix}daftar Nombre\nEjemplo : ${prefix}daftar shanduy`,
+                                        daftarB: `[holii]\n\nPERO PA!\n\nNo estas registrado en mi base de datos 😳 \n\nComando : ${prefix}daftar Nombre\nEjemplo : ${prefix}daftar shanduy`,
 				}
 			}
     			const apakah = ['Ya','Tidak']
